@@ -4,8 +4,8 @@
 [hub]
         protocol = https
 [user]
-        name = AUTHORNAME
-        email = AUTHOREMAIL
+        name = Will Watson
+        email = william.a.watson@gmail.com
 [credential]
         helper = GIT_CREDENTIAL_HELPER
 [alias]

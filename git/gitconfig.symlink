@@ -28,6 +28,11 @@
         keepBackup = false
 [difftool]
         prompt = false
+[merge]
+        tool = kdiff
+[mergetool "kdiff"]
+        cmd = "diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$(if test -f \"$BASE\"; then echo \"$BASE\"; else echo \"$LOCAL\"; fi)\" \"$REMOTE\""
+        trustExitCode = false
 [help]
         autocorrect = 1
 [push]

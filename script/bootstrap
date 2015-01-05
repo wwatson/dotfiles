@@ -128,7 +128,24 @@ link_file () {
 install_dotfiles () {
   info 'installing dotfiles'
 
-  local overwrite_all=false backup_all=false skip_all=false
+  # defaults
+  local backup_all=false
+  local skip_all=false
+  local overwrite_all=true
+
+  #
+  # Process options
+  #
+  while getopts "O" opt; do
+    case $opt in
+      O)
+        local overwrite_all=true
+        ;;
+      \?)
+        echo "An invalid option was passed."
+        exit 1
+    esac
+  done
 
   for src in $(find "$DOTFILES_ROOT" -maxdepth 2 -name '*.symlink')
   do

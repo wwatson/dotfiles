@@ -23,6 +23,9 @@ alias pbjsonpretty='pbpaste | python -mjson.tool | pygmentize -l javascript'
 # Rails
 alias rg="rails g $1"
 
+# Node
+alias npm-exec='PATH=$(npm bin):$PATH'
+
 # Git
 alias gcm="git checkout master"
 alias gcqa="git checkout qa"

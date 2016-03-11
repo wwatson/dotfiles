@@ -26,12 +26,17 @@
         whitespace = nowarn
 [mergetool]
         keepBackup = false
+[difftool "kdiff3"]
+        path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
+        trustExitCode = false
 [difftool]
         prompt = false
+[diff]
+        tool = kdiff3
 [merge]
-        tool = kdiff
-[mergetool "kdiff"]
-        cmd = "diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$(if test -f \"$BASE\"; then echo \"$BASE\"; else echo \"$LOCAL\"; fi)\" \"$REMOTE\""
+        tool = kdiff3
+[mergetool "kdiff3"]
+        path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
         trustExitCode = false
 [help]
         autocorrect = 1

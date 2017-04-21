@@ -1,11 +1,12 @@
 alias reload!='. ~/.zshrc'
 
 # Shell stuff
-alias aca="vim $DOTFILES/zsh/aliases.sh && source ~/.zshrc" # Add a custom alias and reload shell
-alias apa="vim ~/.private_aliases.sh && source ~/.zshrc" # Add a custom alias and reload shell
+alias aca="vim $DOTFILES/zsh/aliases.zsh && source ~/.zshrc" # Add a custom alias and reload shell
+alias apa="vim ~/.private_aliases.zsh && source ~/.zshrc" # Add a custom alias and reload shell
 alias ez="vim ~/.zshrc" # edit zsh config
 alias sz="source ~/.zshrc" # reload zsh
 alias cdh=" cd ~"
+alias cdpp="cd ~/Documents/personal/projects"
 
 # Vim
 alias ev="vim ~/.vimrc"

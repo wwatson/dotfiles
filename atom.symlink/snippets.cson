@@ -37,6 +37,13 @@
 
     """
     'description': 'Create a new section'
+  'New Priority':
+    'prefix': 'npri'
+    'body': """
+
+    - [ ] $1
+    """
+    'description': 'Create a new section'
 
 '.source.js':
   'Log':

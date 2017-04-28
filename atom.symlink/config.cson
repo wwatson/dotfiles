@@ -27,7 +27,12 @@
     tabType: "soft"
   fonts:
     fontFamily: "Inconsolata"
+  "git-diff":
+    showIconsInEditorGutter: true
   "go-plus": {}
+  "markdown-preview":
+    liveUpdate: false
+    useGitHubStyle: true
   "release-notes":
     viewedVersion: "0.89.0"
   "spell-check":

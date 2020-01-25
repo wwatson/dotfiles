@@ -1,0 +1,16 @@
+#compdef work
+_work() { 
+  local -a workspaces
+  workspaces_full=($HOME/workspaces/*)
+  workspaces=()
+  for workspace in "${workspaces_full[@]}"; do
+    workspaces+=("$(basename $workspace)")
+  done
+
+  _describe -t workspaces 'workspaces' workspaces
+
+  return 0
+}
+
+_work
+
